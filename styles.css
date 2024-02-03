@@ -15,7 +15,7 @@ body {
 .weather-app {
   background: #f5e1da;
   max-width: 600px;
-  margin: 25px auto;
+  margin: 20px auto;
   padding: 20px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 15px;
@@ -46,11 +46,12 @@ body {
 }
 
 header {
-  padding: 20px 25px;
+  padding: 20px 20px;
 }
 
 h1 {
   font-size: 40px;
+  margin-left: 0px;
 }
 p {
   color: rgba(39, 33, 66, 0.4);
@@ -91,7 +92,7 @@ a {
   padding: 25px 0;
 }
 .weather-app-city {
-  margin: 25px;
+  margin: 20px;
   line-height: 48px;
 }
 .weather-app-details {
