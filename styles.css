@@ -40,11 +40,6 @@ body {
   font-size: 16px;
 }
 
-.weather-app-data {
-  display: flex;
-  justify-content: space-between;
-}
-
 header {
   padding: 20px 20px;
 }
@@ -91,6 +86,11 @@ a {
   display: block;
   padding: 25px 0;
 }
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
 .weather-app-city {
   margin: 20px;
   line-height: 48px;
@@ -107,6 +107,34 @@ a {
   display: flex;
   margin: 10px;
 }
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+}
+
+.weather-forecast-day {
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.temperature-high {
+  color: #f65282;
+  font-weight: bold;
+}
+
+.temperature-low {
+  font-weight: bold;
+}
+
 .weather-app-temp {
   font-size: 60px;
   font-weight: 500;
