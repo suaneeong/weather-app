@@ -84,7 +84,7 @@ function displayForecast(response) {
 
           <div class="weather-forecast-icon">
             <img
-              src="${day.condition.icon_url} class="weather-forecast-icon"
+              src="${day.condition.icon_url}" class="weather-forecast-icon"
             />
           </div>
           <div class="weather-forecast-temperature">

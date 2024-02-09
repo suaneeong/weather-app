@@ -141,6 +141,8 @@ a {
 
 .weather-forecast-icon {
   text-align: center;
+  width: 80px;
+  height: 80px;
 }
 .temperature-high {
   color: #f65282;
