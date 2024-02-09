@@ -55,7 +55,34 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  letforecastHtml = "";
+
+  days.forEach(function (day) {
+    let forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-full">
+      <div class="weather-forecast-day">${day}</div>
+          <div class="weather-forecast-icon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-app-icon"
+            />
+          </div>
+          <div class="weather-forecast-temperature">
+          <span class="temperature-high">15°</span>&nbsp;
+          <span class="temperature-low">10°</span>
+        </div></div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector(".search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Kuala Lumpur");
+displayForecast();
