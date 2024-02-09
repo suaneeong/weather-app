@@ -58,14 +58,14 @@ function formatDate(date) {
 function getForecast(city) {
   let apiKey = "f085atc08a41dae309bfobb656f79131";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
-  console.log(apiUrl);
+  axios(apiUrl).then(displayForecast);
 }
 
-function displayForecast() {
+function displayForecast(response) {
   let forecast = document.querySelector("#forecast");
 
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
-  letforecastHtml = "";
+  let forecastHtml = "";
 
   days.forEach(function (day) {
     let forecastHtml =
